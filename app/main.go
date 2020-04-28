@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/playground/app/routes"
+	"github.com/go-laravelized/app/routes"
 	"log"
 	"net/http"
 	"time"
