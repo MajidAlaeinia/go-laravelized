@@ -37,8 +37,9 @@
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+../.idea/
 ./main
-./storage
+storage
 .env
 
 # End of https://www.gitignore.io/api/go,linux
