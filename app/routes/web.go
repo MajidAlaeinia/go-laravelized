@@ -7,8 +7,8 @@ import (
 
 func WebRoutes() *mux.Router {
 	router := mux.NewRouter()
-	router.HandleFunc("/movies/{category}/{id:[0-9]}", controllers.MovieHandler)
-	router.HandleFunc("/articles/{category}/{id:[0-9]}", controllers.ArticleHandler)
+	router.HandleFunc("/movies/{category}/{id:[0-9]}", controllers.MovieHandler).Name("movies.show")
+	router.HandleFunc("/articles/{category}/{id:[0-9]}", controllers.ArticleHandler).Name("articles.show")
 
 	return router
 }
